@@ -1,0 +1,108 @@
+/* Shared stylesheet for all pages */
+/* Universal selector */
+* { box-sizing: border-box; }
+
+/* Element selector */
+body {
+  font: 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937; /* color property */
+  background-color: #eef2ff; /* background-color property */
+  margin: 0; /* margin property */
+  padding: 2rem; /* padding property */
+}
+
+/* ID selector */
+#page-title {
+  color: #3730a3; /* color */
+  font-size: 2.25rem; /* font property */
+  font-style: normal; /* font-style property */
+  margin-bottom: 0.5rem;
+}
+
+/* Class selector */
+.card {
+  background-color: #ffffff; /* background-color */
+  border: 1px solid #c7d2fe; /* border property */
+  padding: 1.5rem; /* padding */
+  margin-bottom: 1.25rem; /* margin */
+  border-radius: 14px;
+  box-shadow: 0 18px 50px rgba(99, 102, 241, 0.12);
+}
+
+/* Descendant selector */
+.main-content p {
+  line-height: 1.8;
+  margin: 0.9rem 0;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-bottom: 1.25rem;
+}
+
+nav a {
+  color: #4f46e5;
+  text-decoration: none;
+  background-color: rgba(79, 70, 229, 0.1);
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Pseudo-class selector */
+a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 3px solid #7c3aed;
+  outline-offset: 3px;
+}
+
+/* List-style property */
+ul, ol {
+  margin-left: 1.25rem;
+  padding-left: 0.5rem;
+  list-style-type: disc; /* list-style property */
+}
+
+/* Additional utility classes to show usage */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.meta {
+  color: #475569;
+  font-style: italic; /* font-style property used */
+}
+
+/* Layout helpers */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+footer.footer {
+  margin-top: 2rem;
+  color: #6b7280;
+}
